@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<!--<head>
+<h1>subjects</h1>
+</head>
+<body>
+<form>
+  <label for="sub">Subject:</label><br>
+  <input type="text" id="sub" name="sub"><br>
+
+  <label for="teach">Teacher:</label><br>
+  <input type="text" id="teach" name="teach">
+  
+
+  <label for="freq">frequency:</label>
+  <select name="freq" id="freq">     
+   	<option value="1">1</option>
+        
+	<option value="2">2</option>
+	<option value="3">3</option>
+	<option value="4">4</option>
+	<option value="5">5</option>
+	<option value="6">6</option>
+	<option value="7">7</option>
+	<option value="8">8</option>
+	<option value="9">9</option>
+	<option value="10">10</option>
+	<option value="11">11</option>
+	<option value="12">12</option>
+	<option value="13">13</option>
+	<option value="14">14</option>
+	<option value="15">15</option>
+
+
+</form> -->
+
+<form action="{% url 'saveteachersub' %}" method="post">
+	{% csrf_token %}
+	
+	{{ form4 }}
+	
+	<input type="submit" value="Submit">
+</form>
+
+
+</body>
+</html>
