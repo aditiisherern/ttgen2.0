@@ -19,3 +19,11 @@ admin.site.register(teacher)
 from .models import classs #model name
 
 admin.site.register(classs)
+
+from .models import subthing1
+
+admin.site.register(subthing1)
+
+from .models import nofixed
+
+admin.site.register(nofixed)

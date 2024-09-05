@@ -13,5 +13,6 @@ urlpatterns = [
     path("teachersreal", views.page4, name="teachers1"),
     path("save_teacher",views.save_teacherinfo,name='saveteachersub'),
     path("timingsreal",views.page3, name="timingss"),
-    path("save_timings",views.save_timings,name="savetimings")
-]
+    path("save_timings",views.save_timings,name="savetimings"),
+    path("generator",views.generate_day_schedule,name='ttgen')
+]  

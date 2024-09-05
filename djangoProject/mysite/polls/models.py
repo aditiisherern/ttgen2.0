@@ -22,10 +22,15 @@ class classs(models.Model):
     grade=models.CharField(max_length=20)
     section=models.CharField(max_length=5)
 
+class subthing1(models.Model):
+    diction=models.CharField(max_length=1000)
 
+
+class nofixed(models.Model):
+    nofix=models.IntegerField()
 #every time 
 #mysite % python3 manage.py makemigrations
-#mysite % python3 manage.py migrate 
+#mysite % python3 manage.py migrate  
 
 
 
